@@ -10,3 +10,6 @@ output "vm_internal_ip" {
   value = google_compute_instance.vm_instance.network_interface[0].network_ip
 }
 
+output "gke_cluster_name" {
+  value = google_container_cluster.gke_cluster.name
+}
